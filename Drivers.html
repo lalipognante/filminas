@@ -15,6 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
     <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/theme/black.css" id="theme">
 
     <!-- Code syntax highlighting -->
@@ -57,19 +58,33 @@
             <h1>Drivers</h1>
             <h3>Conceptos básicos</h3>
             <p>
-                <small>Created by <a href="http://twitter.com/edme88">@edme88</a></small>
+                <small>Created by <!--a href="http://steamcommunity.com/id/edme88"--><i class="fa fa-twitter"></i>@edme88<!--/a--> & <!--a href="http://steamcommunity.com/id/rmarku"--><i class="fa fa-github"></i>rmarku<!--/a--></small>
+            </p>
+        </section>
+        <section>
+            <h2>Driver o Controlador de Dispositivo</h2>
+            <p>
+                Es un programa que permite al SO interaccionar con un periférico, haciendo una abstracción del hardware y proporcionando una interfaz para utilizar el dispositivo. <br><br>
+                Le indica al SO como controlar y comunicarse con un dispositivo particular.<br>
             </p>
         </section>
 
         <section>
-            <h2>Administrador de Dispositivos</h2>
-            <p>
-                Es una herramienta que contiene una lista de los dispositivos hardware instalados en el equipo.
-            </p>
+
+            <img class="noBorder" src="img/drivers.png" style="margin: auto">
         </section>
 
+
+        <section>
+            <h2>Tipos de Drivers</h2>
+            <ul>
+                <li>Existen tantos tipos de controladores como tipos de periféricos</li>
+                <li>Puede haber más de un controlador para un mismo dispositivo</li>
+            </ul>
+        </section>
         <section>
             <section>
+                <h2>Windows</h2>
                 <h2>Administrador de Dispositivos</h2>
                 <p>
                     El usuario puede:
@@ -82,13 +97,16 @@
                 </p>
             </section>
         </section>
-
         <section>
-            <h2>Driver o Controlador de Dispositivo</h2>
-            <p>
-                Es un programa que permite al SO interaccionar con un periférico, haciendo una abstracción del hardware y proporcionando una interfaz para utilizar el dispositivo. <br><br>
-                Le indica al SO como controlar y comunicarse con un dispositivo particular.
-            </p>
+            <section>
+                <h2>Linux</h2>
+                <h2>Administrador de Dispositivos</h2>
+                <ul>
+                    <li>Los drivers son módulos del <b>Kernel</b></li>
+                    <li>Con el comando lsmod</li>
+                    <li>Desde el visor de hardware del entorno gráfico</li>
+                </ul>
+            </section>
         </section>
         <!--http://support.hp.com/es-es/document/c00374631 Simbolos de Error de Administrador de dispositivos-->
     </div>
